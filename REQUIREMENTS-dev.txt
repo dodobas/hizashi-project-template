@@ -10,4 +10,7 @@ pylint==0.28.0
 
 django-devserver==0.6.2
 
+# documentation
+Sphinx==1.2b1
+
 
