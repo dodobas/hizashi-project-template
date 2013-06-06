@@ -1,4 +1,4 @@
-from .core import *
+from .base import *
 
 # Extra installed apps
 INSTALLED_APPS += (

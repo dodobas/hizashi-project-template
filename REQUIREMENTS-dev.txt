@@ -13,4 +13,8 @@ django-devserver==0.6.2
 # documentation
 Sphinx==1.2b1
 
+# nicer python interpreter
+bpython==0.12
 
+# pdb plus plus
+pdbpp==0.7.2
