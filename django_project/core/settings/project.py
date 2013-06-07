@@ -23,3 +23,29 @@ INSTALLED_APPS += (
 
 # Set debug to false for production
 DEBUG = TEMPLATE_DEBUG = False
+
+
+PIPELINE_JS = {
+    'contrib': {
+        'source_filenames': (
+            'js/jquery-1.10.1.min.js',
+            'js/csrf-ajax.js',
+            'js/underscore-min.js',
+            'js/bootstrap.min.js',
+        ),
+        'output_filename': 'js/contrib.js',
+    }
+}
+
+PIPELINE_CSS = {
+    'contrib': {
+        'source_filenames': (
+            'css/bootstrap.css',
+            # 'css/bootstrap-responsive.css',
+        ),
+        'output_filename': 'css/contrib.css',
+        'extra_context': {
+            'media': 'screen, projection',
+        },
+    }
+}
