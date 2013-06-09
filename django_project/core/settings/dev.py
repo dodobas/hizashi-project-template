@@ -64,7 +64,7 @@ LOGGING = {
     # non handled logs will propagate to the root logger
     'root': {
         'handlers': ['console'],
-        'level': 'DEBUG'
+        'level': 'WARNING'
     }
 }
 
