@@ -15,8 +15,7 @@ COVERAGE_EXCLUDES_FOLDERS = [
 ]
 
 NOSE_ARGS = [
-    'mts',
-    'core'
+    # 'django_app',
 ]
 
 PYLINT_RCFILE = 'pylint.rc'
@@ -24,8 +23,7 @@ PYLINT_RCFILE = 'pylint.rc'
 # For django-jenkins integration
 #
 PROJECT_APPS = (
-    'mts',
-    'core'
+    # django_app,
 )
 
 JENKINS_TASKS = (
