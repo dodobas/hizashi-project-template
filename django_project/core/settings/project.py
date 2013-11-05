@@ -28,7 +28,7 @@ DEBUG = TEMPLATE_DEBUG = False
 PIPELINE_JS = {
     'contrib': {
         'source_filenames': (
-            'js/jquery-1.10.1.min.js',
+            'js/jquery-1.10.2.min.js',
             'js/csrf-ajax.js',
             'js/underscore-min.js',
             'js/bootstrap.min.js',
