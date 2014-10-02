@@ -3,7 +3,6 @@ from .base import *
 # Extra installed apps
 INSTALLED_APPS += (
     # 'raven.contrib.django',  # enable Raven plugin
-    'south',
     'pipeline',
 )
 
