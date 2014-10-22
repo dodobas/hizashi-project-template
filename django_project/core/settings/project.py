@@ -3,6 +3,7 @@ from .contrib import *
 DATABASES = {
     'default': {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         # Or path to database file if using sqlite3.
         'NAME': '',
@@ -21,16 +22,13 @@ DATABASES = {
 INSTALLED_APPS += (
 )
 
-# Set debug to false for production
-DEBUG = TEMPLATE_DEBUG = False
-
 
 PIPELINE_JS = {
     'contrib': {
         'source_filenames': (
-            'js/jquery-1.11.1.min.js',
-            'js/csrf-ajax.js',
-            'js/underscore-min.js'
+            # 'js/jquery-1.11.1.min.js',
+            # 'js/csrf-ajax.js',
+            # 'js/underscore-min.js'
         ),
         'output_filename': 'js/contrib.js',
     }

@@ -6,8 +6,8 @@ INSTALLED_APPS += (
     'pipeline',
 )
 
-# use underscore template function
-PIPELINE_TEMPLATE_FUNC = '_.template'
+# define template function (example for underscore)
+# PIPELINE_TEMPLATE_FUNC = '_.template'
 
 # enable cached storage - requires uglify.js (node.js)
 STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'

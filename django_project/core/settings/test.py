@@ -14,6 +14,7 @@ NOSE_ARGS = (
     '--cover-html',
     '--cover-html-dir=xmlrunner/html',
     '--cover-inclusive',
+    '--cover-branches',
     # '--cover-package=django_app',
     '--nocapture',
     '--nologcapture'
@@ -25,6 +26,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = '/tmp/'
 
 
+# Do not log anything during testing
 LOGGING = {
     # internal dictConfig version - DON'T CHANGE
     'version': 1,

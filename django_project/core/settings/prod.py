@@ -4,6 +4,12 @@ from .project import *
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
 
+# Comment if you are not running behind proxy
+USE_X_FORWARDED_HOST = True
+
+# Set debug to false for production
+DEBUG = TEMPLATE_DEBUG = False
+
 if 'raven.contrib.django' in INSTALLED_APPS:
     SENTRY_DSN = ('#REPLACE ME#')
 
