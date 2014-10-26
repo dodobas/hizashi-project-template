@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from .project import *
 
 # Set debug to True for development
