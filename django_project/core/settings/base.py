@@ -52,7 +52,7 @@ STATICFILES_DIRS = (
 )
 
 # import SECRET_KEY into current namespace
-from .secret import SECRET_KEY
+from .secret import SECRET_KEY  # NOQA
 
 # default middleware classes
 MIDDLEWARE_CLASSES = (
@@ -83,4 +83,15 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'django.contrib.admin',
+)
+
+
+# enable cached storage
+STATICFILES_STORAGE = (
+    'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 )

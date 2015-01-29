@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-from .base import *
+from .base import *  # NOQA
 
 # Extra installed apps
 INSTALLED_APPS += (
-    # 'raven.contrib.django',  # enable Raven plugin
-    'pipeline',
+    # any 3rd party apps
 )
 
-# define template function (example for underscore)
-# PIPELINE_TEMPLATE_FUNC = '_.template'
-
-# enable cached storage - requires uglify.js (node.js)
-STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+# 3rd party specific app settings
